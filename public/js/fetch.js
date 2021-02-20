@@ -17,6 +17,8 @@ fetch('https://newsapi.org/v2/top-headlines?sources=abc-news&apiKey=e4e664afac41
 return data.json();
     })
  .then((result)=>{
+     console.log("this is result boy");
+     console.log(result);
 document.getElementById('post1bbc').innerHTML=`<div class="single-blog-post featured-post">
     <div class="post-thumb">
         <a href="${result.articles[0].url}" target="_blank"><img src="${result.articles[0].urlToImage}"" alt=""></a>
